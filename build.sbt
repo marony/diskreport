@@ -2,12 +2,12 @@ name := """diskreport"""
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.7"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "8.0.92-R10",
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+  "org.scalafx" %% "scalafx" % "10.0.2-R15",
+  "org.scalatest" %% "scalatest" % "3.2.0-SNAP10" % Test
 )
 
 enablePlugins(JavaAppPackaging)
