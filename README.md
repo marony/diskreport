@@ -3,13 +3,15 @@
 　scalafxもJavaFX8も全然知らないので練習で作ってみました。
 
     Scalaが入っている環境で起動
-    $ activator run
-    
+    $ sbt run
+
+    ↓動かない
     Windows用のインストーラ(msi)作成
-    $ activator windows:packageBin
+    $ sbt windows:packageBin
     
+    ↓たぶん動かない
     Mac用のインストーラ(DMG)作成
-    $ activator universal:packageOsxDmg
+    $ sbt universal:packageOsxDmg
 
 ![画像](/resources/diskreport.png)
 
