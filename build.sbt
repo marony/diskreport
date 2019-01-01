@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
 //enablePlugins(JavaAppPackaging)
 
 mainClass in assembly := Some("com.binbo_kodakusan.Application")
+test in assembly := {}
 
 // Uncomment to use Akka
 //libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"

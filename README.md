@@ -2,16 +2,12 @@
 
 　scalafxもJavaFX8も全然知らないので練習で作ってみました。
 
-    Scalaが入っている環境で起動
+## Scalaが入っている環境で起動
+
     $ sbt run
 
-    ↓動かない
-    Windows用のインストーラ(msi)作成
-    $ sbt windows:packageBin
-    
-    ↓たぶん動かない
-    Mac用のインストーラ(DMG)作成
-    $ sbt universal:packageOsxDmg
+## JARファイル作成
+    $ sbt assmbly
 
 ![画像](/resources/diskreport.png)
 
