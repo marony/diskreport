@@ -6,13 +6,13 @@ scalaVersion := "2.12.7"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "10.0.2-R15",
+  "org.scalafx" %% "scalafx" % "11-R16",
   "org.scalatest" %% "scalatest" % "3.2.0-SNAP10" % Test
 )
 
-enablePlugins(JavaAppPackaging)
+//enablePlugins(JavaAppPackaging)
 
-//mainClass in Compile := Some("com.binbo_kodakusan.Application")
+mainClass in assembly := Some("com.binbo_kodakusan.Application")
 
 // Uncomment to use Akka
 //libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
