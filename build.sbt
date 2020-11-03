@@ -2,11 +2,12 @@ name := """diskreport"""
 
 version := "1.0"
 
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.12"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
-  "org.scalafx" %% "scalafx" % "11-R16",
+//  "org.scalafx" %% "scalafx" % "14-R19",
+  "org.scalafx" %% "scalafx" % "8.0.192-R14",
   "org.scalatest" %% "scalatest" % "3.2.0-SNAP10" % Test
 )
 
@@ -19,8 +20,8 @@ test in assembly := {}
 //libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
 
 // ScalaFXでデフォルトのCSSが見当たらない - きくらげ観察日記 <http://inkar-us-i.hatenablog.com/entry/2016/02/24/150000>
-unmanagedJars in Compile += {
-  val ps = new sys.SystemProperties
-  val jh = ps("java.home")
-  Attributed.blank(file(jh) / "lib/ext/jfxrt.jar")
-}
+//unmanagedJars in Compile += {
+//  val ps = new sys.SystemProperties
+//  val jh = ps("java.home")
+//  Attributed.blank(file(jh) / "lib/ext/jfxrt.jar")
+//}

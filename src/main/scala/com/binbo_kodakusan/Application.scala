@@ -126,7 +126,7 @@ object Application extends JFXApp {
       upButtonEnable.value = (vm_.selected != null && vm_.selected.parent != null)
       chart.data = vm_.selected.children.map(c => PieChart.Data("[" + Model.convertSize(c.size) + "] " + c.name, c.size))
       // チャートの設定
-      chart.data().zip(vm_.selected.children).foreach { data =>
+      chart.data.getValue.zip(vm_.selected.children).foreach { data =>
         val node = data._1.node()
         val info = data._2
         // ID
